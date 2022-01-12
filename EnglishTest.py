@@ -37,7 +37,7 @@ class Bot():
 
         @self.bot.message_handler(commands=["start"])
         def category(message):
-            self.bot.send_message(message.chat.id,text='hello',reply_markup=self.inline_kb1)
+            self.bot.send_message(message.chat.id,text='Please choose category',reply_markup=self.keyboard_category)
 
 
 
